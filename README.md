@@ -17,6 +17,10 @@ Time complexity: O(m.n) where m is the length of the longest string in the array
 Space complexity:O(m) where m is the length of the longest string in the array.
 
 # creating Project
+
+# install TypeScript globally
+npm install -g typescript
+
 # Initialize a new Node.js project
 npm init -y
 
