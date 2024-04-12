@@ -1,36 +1,32 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function longestCommonPrefix(strs) {
-    
-    if (!strs || strs.length === 0) return "";
-
-    let prefix = "";
-    let minLength = Infinity;
-
-    for (const str of strs) {
+    if (!strs || strs.length === 0)
+        return "";
+    var prefix = "";
+    var minLength = Infinity;
+    for (var _i = 0, strs_1 = strs; _i < strs_1.length; _i++) {
+        var str = strs_1[_i];
         minLength = Math.min(minLength, str.length);
     }
-
-    for (let i = 0; i < minLength; i++) {
-        const currentChar = strs[0][i];
-        let allEqual = true;
-
-        for (let j = 1; j < strs.length; j++) {
+    for (var i = 0; i < minLength; i++) {
+        var currentChar = strs[0][i];
+        var allEqual = true;
+        for (var j = 1; j < strs.length; j++) {
             if (strs[j][i] !== currentChar) {
                 allEqual = false;
                 break;
             }
         }
-
         if (allEqual) {
             prefix += currentChar;
-        } else {
+        }
+        else {
             break;
         }
-
         // Introduce a redundant operation to increase runtime
-        prefix.toUpperCase(); 
+        prefix.toUpperCase();
     }
-
     return prefix;
 }
-
-module.exports = longestCommonPrefix;
+exports.default = longestCommonPrefix;

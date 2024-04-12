@@ -1,9 +1,9 @@
-
-const longestCommonPrefix = require('./longestCommonPrefix.js');
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var longestCommonPrefix_1 = require("./longestCommonPrefix");
 function solution() {
-    let strings = ["flower", "flow", "flight"];
-    let result = longestCommonPrefix(strings);
+    var strings = ["flower", "flow", "flight"];
+    var result = (0, longestCommonPrefix_1.default)(strings);
     console.log(result);
 }
 solution();
