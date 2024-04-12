@@ -19,5 +19,11 @@ Space complexity:O(m) where m is the length of the longest string in the array.
 # creating Project
 # Initialize a new Node.js project
 npm init -y
+
+# compile TypeScript file to JavaScript:
+tsc mainSolution.ts
+
+This will create a mainSolution.js file in the same directory. You can run this file with Node.js
+
 # Run the compiled JavaScript file
-node solution.js
+node mainSolution.js
